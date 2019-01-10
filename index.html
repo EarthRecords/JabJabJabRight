@@ -27,8 +27,6 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='scap.flashblock-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/compact-wp-audio-player/css/flashblock.css?ver=5.0.3' type='text/css' media='all' />
-<link rel='stylesheet' id='scap.player-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/compact-wp-audio-player/css/player.css?ver=5.0.3' type='text/css' media='all' />
 <link rel='stylesheet' id='wp-block-library-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/gutenberg/build/block-library/style.css?ver=1547149106' type='text/css' media='all' />
 <link rel='stylesheet' id='font-awesome-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/themes/oceanwp/assets/css/third/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
 <link rel='stylesheet' id='simple-line-icons-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css?ver=2.4.0' type='text/css' media='all' />
@@ -36,11 +34,13 @@ img.emoji {
 <link rel='stylesheet' id='slick-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/themes/oceanwp/assets/css/third/slick.min.css?ver=1.6.0' type='text/css' media='all' />
 <link rel='stylesheet' id='oceanwp-style-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/themes/oceanwp/assets/css/style.min.css?ver=1.5.32' type='text/css' media='all' />
 <link rel='stylesheet' id='oe-widgets-style-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/ocean-extra/assets/css/widgets.css?ver=5.0.3' type='text/css' media='all' />
-<script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/compact-wp-audio-player/js/soundmanager2-nodebug-jsmin.js?ver=5.0.3'></script>
+<link rel='stylesheet' id='mediaelementjs-styles-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/v4/mediaelementplayer.min.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelementjs-styles-legacy-css'  href='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/v4/mediaelementplayer-legacy.min.css?ver=5.0.3' type='text/css' media='all' />
 <script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/ocean-extra//includes/widgets/js/mailchimp.min.js?ver=5.0.3'></script>
 <script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/ocean-extra//includes/widgets/js/share.min.js?ver=5.0.3'></script>
+<script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/v4/mediaelement-and-player.min.js?ver=4.2.8'></script>
 <link rel='https://api.w.org/' href='http://earthrecords.github.io/JabJabJabRight/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://earthrecords.github.io/JabJabJabRight/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://earthrecords.github.io/JabJabJabRight/wp-includes/wlwmanifest.xml" /> 
@@ -131,6 +131,59 @@ img.emoji {
 <figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 <p class="responsive-video-wrap clr"><iframe width="1200" height="900" src="https://www.youtube.com/embed/GDb5geF7_LI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 </div></figure>
+
+
+	<audio id="wp_mep_1"      controls="controls" preload="none"  >
+		
+		
+		
+		
+		
+		
+		
+	</audio>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('#wp_mep_1').mediaelementplayer({
+		m:1
+		
+		,features: ['playpause','current','progress','duration','volume','tracks','fullscreen']
+		,audioWidth:400,audioHeight:30
+	});
+});
+</script>
+
+
+
+	<audio id="wp_mep_2"      controls="controls" preload="none"  >
+		
+		
+		
+		
+		
+		
+		
+	</audio>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('#wp_mep_2').mediaelementplayer({
+		m:1
+		
+		,features: ['playpause','current','progress','duration','volume','tracks','fullscreen']
+		,audioWidth:400,audioHeight:30
+	});
+});
+</script>
+
+
+
+
+<iframe 
+  frameborder="0" 
+  width="400"     
+  height="200"
+  src="https://drive.google.com/file/d/1C-JZhppQXyftE5sGLQmfVZh0C00JM73X/preview">    
+</iframe>
 
 
 
@@ -236,80 +289,7 @@ img.emoji {
 			</form>
 </div><!-- .mobile-menu-search -->
 
-
-<!-- WP Audio player plugin v1.9.6 - https://www.tipsandtricks-hq.com/wordpress-audio-music-player-plugin-4556/ -->
-    <script type="text/javascript">
-        soundManager.useFlashBlock = true; // optional - if used, required flashblock.css
-        soundManager.url = 'http://earthrecords.github.io/JabJabJabRight/wp-content/plugins/compact-wp-audio-player/swf/soundmanager2.swf';
-        function play_mp3(flg, ids, mp3url, volume, loops)
-        {
-            //Check the file URL parameter value
-            var pieces = mp3url.split("|");
-            if (pieces.length > 1) {//We have got an .ogg file too
-                mp3file = pieces[0];
-                oggfile = pieces[1];
-                //set the file URL to be an array with the mp3 and ogg file
-                mp3url = new Array(mp3file, oggfile);
-            }
-
-            soundManager.createSound({
-                id: 'btnplay_' + ids,
-                volume: volume,
-                url: mp3url
-            });
-
-            if (flg == 'play') {
-                    soundManager.play('btnplay_' + ids, {
-                    onfinish: function() {
-                        if (loops == 'true') {
-                            loopSound('btnplay_' + ids);
-                        }
-                        else {
-                            document.getElementById('btnplay_' + ids).style.display = 'inline';
-                            document.getElementById('btnstop_' + ids).style.display = 'none';
-                        }
-                    }
-                });
-            }
-            else if (flg == 'stop') {
-    //soundManager.stop('btnplay_'+ids);
-                soundManager.pause('btnplay_' + ids);
-            }
-        }
-        function show_hide(flag, ids)
-        {
-            if (flag == 'play') {
-                document.getElementById('btnplay_' + ids).style.display = 'none';
-                document.getElementById('btnstop_' + ids).style.display = 'inline';
-            }
-            else if (flag == 'stop') {
-                document.getElementById('btnplay_' + ids).style.display = 'inline';
-                document.getElementById('btnstop_' + ids).style.display = 'none';
-            }
-        }
-        function loopSound(soundID)
-        {
-            window.setTimeout(function() {
-                soundManager.play(soundID, {onfinish: function() {
-                        loopSound(soundID);
-                    }});
-            }, 1);
-        }
-        function stop_all_tracks()
-        {
-            soundManager.stopAll();
-            var inputs = document.getElementsByTagName("input");
-            for (var i = 0; i < inputs.length; i++) {
-                if (inputs[i].id.indexOf("btnplay_") == 0) {
-                    inputs[i].style.display = 'inline';//Toggle the play button
-                }
-                if (inputs[i].id.indexOf("btnstop_") == 0) {
-                    inputs[i].style.display = 'none';//Hide the stop button
-                }
-            }
-        }
-    </script>
-    <script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
 <script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js?ver=1.5.32'></script>
 <script type='text/javascript' src='http://earthrecords.github.io/JabJabJabRight/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=1.5.32'></script>
 <script type='text/javascript'>
